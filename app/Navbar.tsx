@@ -17,7 +17,7 @@ export default function Navbar() {
           <Link href="/"> Login</Link>
         </li>
         <li className="p-4">
-          <Link href="/about">About</Link>
+          <Link href="/user">User</Link>
         </li>
         <li className="p-4">Projects </li>
       </ul>
@@ -37,8 +37,8 @@ export default function Navbar() {
           <Link href="/">
             <li className="p-4 border-b border-blue-400"> Login </li>
           </Link>
-          <Link href="/about">
-            <li className="p-4 border-b border-blue-400"> About </li>
+          <Link href="/user">
+            <li className="p-4 border-b border-blue-400"> User </li>
           </Link>
           <li className="p-4 border-b border-blue-400"> Projects </li>
         </ul>
