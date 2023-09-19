@@ -4,15 +4,16 @@ import Navbar from "../Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import LeftBar from "./leftBar";
+import Center from "./center";
 
 const User = () => {
   return (
     <>
       <Navbar />
-      <div className="">
+      <div className="flex gap-3">
+        {/* the gap in tailwind controls space between flexbox items! */}
         <LeftBar />
-        <p>Hope this works...</p>
-        <Link href="/">Login</Link>
+        <Center />
       </div>
     </>
   );

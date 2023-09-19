@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About My Project
+
+I originally wanted to learn about Tailwind, but while researching I was pulled into learning about Next.js as well! Here is a medium article I wrote on one thing I discovered!
+[Client Side Routing in Next.js](https://medium.com/@eyoo5/client-side-routing-in-next-js-react-apps-479fdfbf30d3)
 
 ## Getting Started
 
