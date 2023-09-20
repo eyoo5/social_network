@@ -10,7 +10,7 @@ const User = () => {
   return (
     <>
       <Navbar />
-      <div className="flex gap-3">
+      <div className="flex py-7 px-2 gap-5">
         {/* the gap in tailwind controls space between flexbox items! */}
         <LeftBar />
         <Center />
