@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import Status from "./status";
 import Photos from "./photos";
+import Cards from "./cards";
 import {
-  AiOutlineWechat,
+  AiOutlineAudit,
   AiOutlinePicture,
-  AiOutlineTeam,
-  AiOutlineSolution,
+  AiOutlineLink,
 } from "react-icons/ai";
 
 const Center = () => {
@@ -36,33 +36,37 @@ const Center = () => {
     <>
       <div className="">
         <p className="text-gray-600 font-semibold text-3xl">Esther Yoo</p>
-        <div className=" flex text-gray-600 text-lg py-1 ">
-          <div className="flex gap-2">
+        <div className=" flex-col text-gray-600 text-lg py-1 ">
+          <div className="flex gap-5">
             Share:
-            <div className="hover:cursor-pointer" onClick={handleStatus}>
-              Status
+            <div className="flex hover:cursor-pointer" onClick={handleStatus}>
+              {" "}
+              <AiOutlineAudit /> Status
             </div>
-            {status ? (
-              <Status />
-            ) : (
-              <div className="hidden">
-                <Status />
-              </div>
-            )}
-            <div className="hover:cursor-pointer" onClick={handlePhotos}>
-              Photos
+            <div className="flex hover:cursor-pointer" onClick={handlePhotos}>
+              <AiOutlinePicture /> Photos
             </div>
-            {photos ? (
-              <Photos />
-            ) : (
-              <div className="hidden">
-                <Photos />
-              </div>
-            )}
-            <div className="hover:cursor-pointer" onClick={handleLink}>
-              Link
+            <div className="flex hover:cursor-pointer" onClick={handleLink}>
+              <AiOutlineLink /> Link
             </div>
           </div>
+          {status ? (
+            <Status />
+          ) : (
+            <div className="hidden">
+              <Status />
+            </div>
+          )}
+          {photos ? (
+            <Photos />
+          ) : (
+            <div className="hidden">
+              <Photos />
+            </div>
+          )}
+        </div>
+        <div className="bg-gray-100">
+          <Cards />
         </div>
       </div>
     </>

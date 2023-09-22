@@ -12,27 +12,30 @@ const LeftBar = () => {
   return (
     <>
       <div className="isolate border-spacing-1 ">
-        <Image
-          className="rounded start-1 px-5 pb-3"
-          src="/Images/ProfilePic.jpg"
-          width={230}
-          height={150}
-          alt="Profile Picture of User"
-        />
+        <div className="flex justify-center py-2">
+          <Image
+            className=""
+            src="/Images/ProfilePic.jpg"
+            width={300}
+            height={150}
+            alt="Profile Picture of User"
+          />
+        </div>
+
         <ul className="text-gray-600 px-5 font-medium">
-          <li className="flex hover:cursor-pointer pb-1 gap-1">
+          <li className="flex hover:cursor-pointer pb-1 gap-1 backdrop-grayscale">
             <AiOutlineWechat />
             Wall
           </li>
-          <li className="flex hover:cursor-pointer pb- gap-1">
+          <li className="flex hover:cursor-pointer pb- gap-1 backdrop-grayscale">
             <AiOutlineSolution />
             Info
           </li>
-          <li className="flex hover:cursor-pointer pb- gap-1">
+          <li className="flex hover:cursor-pointer pb- gap-1 backdrop-grayscale">
             <AiOutlinePicture />
             Photos
           </li>
-          <li className="flex hover:cursor-pointer pb- gap-1">
+          <li className="flex hover:cursor-pointer pb- gap-1 backdrop-grayscale">
             <AiOutlineTeam />
             Friends
           </li>
