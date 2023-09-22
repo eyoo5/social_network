@@ -19,7 +19,7 @@ export default function Navbar() {
         <li className="p-4">
           <Link href="/user">User</Link>
         </li>
-        <li className="p-4">Projects </li>
+        <li className="p-4">Account </li>
       </ul>
 
       <div onClick={handleNav} className="block md:hidden">
